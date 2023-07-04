@@ -1,0 +1,188 @@
+<html>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>风土人情</title>
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+  </head>
+
+<body>
+  <!--头部开始-->
+  <header class="header">
+    <div class="warp">
+      <button class="nav-btn only-mobile"><img src="images/nav-btn.gif" id="fbtn"></button>
+      <div class="head-top">
+        <div class="logo">
+          <a href="index.html" title="">
+            <img src="images/logo.png" width="120px" align="left" alt="" />
+            <span>天都 | 重庆</span>
+          </a>
+        </div>
+        <div class="head-top-r">
+          <ul>
+            <li><a href="javascript:void(0);" onclick="SetHome();">设为首页</a></li>
+            <li>|</li>
+            <li><a href="javascript:void(0);" onclick="AddFavorite();">加入收藏</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="head-bottom" id="fbtm">
+    <nav class="head-nav">
+      <ul>
+        <li class='active'><a href="index.html">首页</a></li>
+        <li class='fl'>
+          <a href="index-1.html">风景旅游</a>
+          <ul class="shade">
+
+            <li class="only"><a href="index-2.html">洪崖洞民俗风貌区</a></li>
+
+            <li class="only"><a href="index-3.html">磁器口古镇</a></li>
+
+            <li class="only"><a href="index-4.html">解放碑</a></li>
+
+            <li class="only"><a href="#">重庆朝天门广场</a></li>
+            <li class="only"><a href="#">大足石刻</a></li>
+          </ul>
+        </li>
+        <li class='fl'><a href="index-5.html">家乡特产</a>
+          <ul class="shade ">
+
+            <li class="only"><a href="index-6.html">陈麻花</a></li>
+
+            <li class="only"><a href="index-7.html">火锅底料</a></li>
+
+            <li class="only"><a href="#">羊角豆干</a></li>
+
+          </ul>
+        </li>
+        <li><a href="#">风土人情</a>
+          <ul class="shade ">
+
+            <li class="only"><a href="#">嘉陵江</a></li>
+
+            <li class="only"><a href="#">巴渝文化</a></li>
+
+          </ul>
+        </li>
+        <li><a href="#">英雄事迹</a>
+        </li>
+        <li><a href="#">传统文化</a>
+        </li>
+        <li ><a href="denglu.html">登录 | 注册</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <script>
+    var fbtn = document.getElementById("fbtn");
+    var fbtm = document.getElementById("fbtm");
+    fbtn.onclick = function () {
+      if (fbtm.style.display == "block") {
+        fbtm.style.display = "none";
+      } else {
+        fbtm.style.display = "block";
+      }
+      setTimeout(() => {
+        fbtm.style.display = "block";
+      }, 20000);
+    }
+  </script>
+
+  <div class="banner">
+    <ul class="nbanList">
+      <li><img src="images/风景旅游.jpg" width="100%" /></li>
+    </ul>
+  </div>
+  <div class="position only-pc">
+    <ul>
+      <li>
+        <a href="index.html" style="display: inline-block;">主页</a>
+        >
+        <a href="index-4.html" style="display: inline-block;">风土人情</a>
+      </li>
+
+    </ul>
+  </div>
+  <main class="main">
+    <div class="pro">
+      <div class="pro-l">
+        <div class="pro-list">
+          <h2 class="list-title">风土人情</h2>
+          <ul class="product-nav">
+
+            <li class='first_cat'><a href="#">巴渝文化</a></li>
+
+            <li class='first_cat'><a href="#">工商交易</a></li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="pro-r">
+        <h1 class="sideTitle"><a href="#">风土人情</a></h1>
+        <div class="articleList">
+          <div class="art_list">
+            <div class="art_img"><a href="#"><img src="images/巴渝文化.jpg" /></a></div>
+            <div class="art_right">
+              <div class="art_title"><a href="#">巴渝文化</a></div>
+              <div class="art_author">
+                巴渝文化是长江上游地区最富有鲜明个性的民族文化之一。巴渝文化起源于巴文化，它是指巴族和巴国在历史的发展中所形成的地域性文化。巴人一直生活在大山大川之间，大自然的熏陶、险恶的环境，炼就一种顽强、坚韧和剽悍的性格，因此巴人以勇猛、善战而称。巴人的军队参加周武王讨伐商（殷）纣王战争，总是一边唱着进军的歌谣，一边跳着冲锋的舞蹈，勇往直前，古代典籍之“武王伐纣，前歌后舞”。
+              </div>
+            </div>
+          </div>
+          <div class="art_list">
+            <div class="art_img"><a href="#"><img src="images/工商交易.jpg" /></a></div>
+            <div class="art_right">
+              <div class="art_title"><a href="#">工商交易</a></div>
+              <div class="art_author">
+                1997年，重庆成为中央直辖市，为商业发展带来重大机遇，据资料显示，当年重庆社会消费品零售总额达568.19亿元，比1996年增长14.0%。
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="blank clear"></div>
+        <nav class="in">
+          <ul class="pagination">
+            <li><span class="pageinfo">共<strong>1</strong>页<strong>2</strong>条记录</span></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </main>
+  <div class="clear"></div>
+  <footer class="footer">
+    <div class="warp">
+      <nav class="foo-nav ">
+        <ul>
+          <li><a href="index.html">首页</a></li>
+
+          <li><a href="index-1.html">风景旅游</a></li>
+
+          <li><a href="index-4.html">家乡特产</a></li>
+
+          <li><a href="index-3.html">风土人情</a></li>
+
+          <li><a href="#">英雄事迹</a></li>
+
+          <li><a href="#">传统文化</a></li>
+
+          <li ><a href="denglu.html">登录 | 注册</a></li>
+
+        </ul>
+      </nav>
+      <div class="foo-con">Copyright © 2022 xxxxxxxxxxxxxxxxxxxxxxxxxx </div>
+      <div class="foo-link ">
+        <ul>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

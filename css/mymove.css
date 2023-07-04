@@ -1,0 +1,24 @@
+@keyframes mymove {
+    0% {
+      transform: scale(1); 
+    }
+    25% {
+      transform: scale(1.2); 
+    }
+    50% {
+      transform: scale(1);
+    }
+    75% {
+      transform: scale(1.2);
+    }
+  }
+ 
+
+  .pro-center .img{
+        overflow: hidden;
+  }
+  .pro-center img:hover {
+        animation: mymove 3s infinite;
+        animation-direction: alternate; 
+        animation-timing-function: ease-in-out; 
+}

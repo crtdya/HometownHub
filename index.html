@@ -1,0 +1,302 @@
+<html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>首页</title>
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/lbt.css"></head>
+  <link rel="stylesheet" href="css/mymove.css">
+<body>
+  <!--头部开始-->
+  <header class="header">
+    <div class="warp">
+      <button class="nav-btn only-mobile"><img src="images/nav-btn.gif" id="fbtn"></button>
+      <div class="head-top">
+        <div class="logo">
+          <a href="index.html" title="">
+            <img src="images/logo.png" width="120px" align="left"  alt="" />
+            <span>天都 | 重庆</span>
+          </a>
+        </div>
+        <div class="head-top-r">
+          <ul>
+            <li><a href="javascript:void(0);" onclick="SetHome();">设为首页</a></li>
+            <li>|</li>
+            <li><a href="javascript:void(0);" onclick="AddFavorite();">加入收藏</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="head-bottom" id="fbtm">
+    <nav class="head-nav">
+      <ul>
+        <li class='active'><a href="index.html">首页</a></li>
+        <li class='fl'>
+          <a href="index-1.html">风景旅游</a>
+          <ul class="shade">
+
+            <li class="only"><a href="index-2.html">洪崖洞民俗风貌区</a></li>
+
+            <li class="only"><a href="#">磁器口古镇</a></li>
+
+            <li class="only"><a href="#">解放碑</a></li>
+            
+            <li class="only"><a href="#">重庆朝天门广场</a></li>
+            <li class="only"><a href="#">大足石刻</a></li>
+          </ul>
+        </li>
+        <li class='fl'><a href="index-4.html">家乡特产</a>
+          <ul class="shade ">
+
+            <li class="only"><a href="index-5.html">陈麻花</a></li>
+
+            <li class="only"><a href="index-6.html">火锅底料</a></li>
+
+            <li class="only"><a href="index-7.html">羊角豆干</a></li>
+
+          </ul>
+        </li>
+        <li ><a href="index-3.html">风土人情</a>
+          <ul class="shade ">
+
+            <li class="only"><a href="#">嘉陵江</a></li>
+
+            <li class="only"><a href="#">巴渝文化</a></li>
+
+          </ul>
+        </li>
+        <li ><a href="#">英雄事迹</a>
+        </li>
+        <li ><a href="#">传统文化</a>
+        </li>
+        <li ><a href="denglu.html">登录 | 注册</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <script>
+      var fbtn = document.getElementById("fbtn");
+      var fbtm = document.getElementById("fbtm");
+      fbtn.onclick = function(){
+        if(fbtm.style.display=="block"){
+            fbtm.style.display="none";
+        }else{
+          fbtm.style.display="block";
+        }
+        setTimeout(() => {
+          fbtm.style.display="block";
+        }, 20000);  
+      }
+  </script>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide "> <img src="images/轮播图1.jfif" alt="" width="100%" height="760px"></div>
+      <div class="swiper-slide "><img src="images/轮播图2.jfif" alt="" width="100%" height="760px"></div>
+      <div class="swiper-slide "><img src="images/轮播图3.jfif" alt="" width="100%" height="760px"></div>
+      <div class="swiper-slide "><img src="images/轮播图4.jfif" alt="" width="100%" height="760px"></div>
+      <div class="swiper-slide "><img src="images/轮播图5.jfif" alt="" width="100%" height="760px"></div>
+    </div>
+    <!-- 分页器 -->
+    <div class="swiper-pagination"></div>
+
+    <!-- 导航按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+  <!-- /*script ———— 轮播图控件*/ -->
+  <script src="js/lbt.js"></script>
+  <script>
+    var mySwiper = new Swiper('.swiper', {
+      direction: 'horizontal', // 垂直切换选项
+      loop: true, // 循环模式选项
+      speed: 500, //图片切换速度
+      autoplay: true,  //图片自动切换
+      grabCursor: true,  //鼠标覆盖Swiper时指针会变成手掌形状，拖动时指针会变成抓手形状
+
+      // 分页器
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // 前进后退按钮
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      effect: 'coverflow',
+
+      //焦点
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'progressbar',
+
+      },
+    })        
+  </script>
+  <!--内容开始-->
+  <div class="content">
+    <main class="txt">
+      <div class="txt-content">
+        <div class="txt-content-l">
+          <h3><a href="#">重庆故事</a></h3>
+          <div class="about">
+            <p> <img src="images/about.jpg" /> </p>
+            <p style="text-indent:2em;">
+              霓虹灯与烟火气交织，衣屩蓝缕与西装革履擦肩而过。城市从水里山里拔地而起，高楼大厦纹丝不动。
+              你同时看到过江索道，江面上停驻着船舶，旁边是新建的大桥，大桥下有呼啸穿梭的轨道交通。或者你在过江大桥上，身旁会突然窜出印着重庆言子的轨道列车。
+            </p>
+            <p style="text-indent:2em;margin-top: 5px;"> 
+              夜晚抬头，红与白映亮了天际，猫咪却在静谧的巷子里舒服地蜷着身子，懒懒睡在家院的围墙上。如果看倦了繁华，转头望向江对面星星点点的万家灯火，或成了最美的风景。
+              不知道何时，它成了“赛博朋克城”。
+              我只知道，这是任何地方都不可替代的，我心中的重庆城。在我眼里，重庆是一座硬核的，赛博朋克的城市。
+              山城重庆，独一无二，无人超越。
+            </p>
+            <p style="text-indent:2em;"> <br />
+            </p>
+          </div>
+          <div class="only-mobile more-box"></div>
+          <div class="clear"></div>
+        </div>
+        <div class="txt-content-r">
+          <h3><a href="#">抗战重庆：一座英雄之城</a></h3>
+          <ul class="">
+            <li class="date">
+              <h1>1937</h1>
+              <h2>7.7</h2>
+            </li>
+            <li class="nr"><a href="7.htmll" >全面侵略战争爆发</a>
+              日本侵略者向中国发动全面侵略，日寇的铁蹄开始向南京进发。中华民族已经到了生死存亡的边缘，面临前所未有的考验。 </li>
+          </ul>
+          <ul class="">
+            <li class="date">
+              <h1>1937</h1>
+              <h2>11.20</h2>
+            </li>
+            <li class="nr"><a href="6.htmll">“战时陪都” —— 重庆</a>
+              南京国民政府发表《国民政府迁驻重庆宣言》,宣布国民政府正式迁都重庆。国民政府决定迁都重庆,旨在向国内和全世界表明中国在外来侵略面前不甘屈服和抗战到底的决心。在此后几年中,重庆的命运得以改变,抗战的命运得以改变,世界反法西斯战争的命运也得以改变。</li>
+          </ul>
+          <ul class="">
+            <li class="date">
+              <h1>1941</h1>
+              <h2>6.5</h2>
+            </li>
+            <li class="nr"><a href="5.htmll" >日战机空袭重庆</a>
+              日军对重庆实施了连续5个多小时的大规模轰炸，致使大批在较场口防空隧道内躲避空袭的重庆市民窒息死亡，制造了震惊中外的“六五”大隧道惨案。</li>
+          </ul>
+          <ul class="">
+            <li class="date">
+              <h1>1944</h1>
+              <h2>6.20</h2>
+            </li>
+            <li class="nr"><a href="4.htmll" >美国副总统华莱士访华抵渝</a>
+              美国副总统华莱士访华抵渝，罗斯福总统特地委托他携带一幅精美卷轴赠与重庆人民，内书颂词：“以表吾人钦佩该市英勇之男女市民。当该市遭遇空前未有之空袭时，人民坚定镇静，不被征服，足证恐怖主义对于争取自由之民族，不能毁灭其精神。此种为争取自由表现之忠实，将鼓舞来世而不朽。”</li>
+          </ul>
+
+          <div class="articleList only-mobile">
+            <ul>
+              <li><span class='time'>1937-07-07 </span><a href="7.html" >全面侵略战争爆发</a></li>
+              <li><span class='time'>1937-11-20 </span><a href="6.html" >“战时陪都” —— 重庆</a></li>
+              <li><span class='time'>1939-05-03 </span><a href="5.html" >日战机空袭重庆</a></li>
+              <li><span class='time'>1941-06-05 </span><a href="4.html" >36架日机狂炸重庆市中心繁华地区</a></li>
+              <li><span class='time'>1944-06-20 </span><a href="3.html" >美国副总统华莱士访华抵渝</a></li>
+
+            </ul>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </main>
+
+    <div class="pro-center">
+      <br><br><br>
+      <div class="pro-con">
+        <div class="pro-center-l">
+          <div class="img"><a href="index-6.html" ><img src="images/黄桷湾立交桥.webp" >
+              <div class="pro_bg"><span></span></div>
+            </a></div>
+          <section>
+            <h6><a href="index-6.html" >黄桷湾立交桥</a></h6>
+          </section>
+        </div>
+        <div class="pro-center-l">
+          <div class="img"><a href="index-7.html" ><img src="images/火锅.gif" >
+              <div class="pro_bg"><span></span></div>
+            </a></div>
+          <section>
+            <h6><a href="index-7.html">火锅</a></h6>
+          </section>
+        </div>
+        <div class="pro-center-l">
+          <div class="img"><a href="#" ><img src="images/三峡博物馆.webp" >
+              <div class="pro_bg"><span></span></div>
+            </a></div>
+          <section>
+            <h6><a href="#">三峡博物馆</a></h6>
+          </section>
+        </div>
+        <div class="pro-center-l" style="margin-top: 30px;">
+          <div class="img"><a href="#" ><img src="images/洪崖洞.webp" >
+              <div class="pro_bg"><span></span></div>
+            </a></div>
+          <section>
+            <h6><a href="#">洪崖洞</a></h6>
+          </section>
+        </div>
+        <div class="pro-center-l" style="margin-top: 30px;">
+          <div class="img"><a href="#" ><img src="images/解放碑.webp" >
+              <div class="pro_bg"><span></span></div>
+            </a></div>
+          <section>
+            <h6><a href="#">解放碑</a></h6>
+          </section>
+        </div>
+        <div class="pro-center-l" style="margin-top: 30px;">
+          <div class="img"><a href="#" ><img src="images/十八梯.webp" >
+              <div class="pro_bg"><span></span></div>
+            </a></div>
+          <section>
+            <h6><a href="#">十八梯</a></h6>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--内容结束-->
+  <div class="clear">
+
+  </div>
+  <footer class="footer">
+    <div class="warp">
+      <nav class="foo-nav ">
+        <ul>
+          <li><a href="index.html">首页</a></li>
+
+          <li><a href="index-1.html">风景旅游</a></li>
+
+          <li><a href="index-4.html">家乡特产</a></li>
+
+          <li><a href="index-3.html">风土人情</a></li>
+
+          <li><a href="#">英雄事迹</a></li>
+
+          <li><a href="#">传统文化</a></li>
+
+          <li ><a href="denglu.html">登录 | 注册</a></li>
+
+        </ul>
+      </nav>
+      <div class="foo-con">Copyright © 2022 xxxxxxxxxxxxxxxxxxxxxxxxxx </div>
+      <div class="foo-link ">
+        <ul>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

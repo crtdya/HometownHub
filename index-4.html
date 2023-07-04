@@ -1,0 +1,202 @@
+<html>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>家乡特产</title>
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+  <!--头部开始-->
+  <header class="header">
+    <div class="warp">
+      <button class="nav-btn only-mobile"><img src="images/nav-btn.gif" id="fbtn"></button>
+      <div class="head-top">
+        <div class="logo">
+          <a href="index.html" title="">
+            <img src="images/logo.png" width="120px" align="left" alt="" />
+            <span>天都 | 重庆</span>
+          </a>
+        </div>
+        <div class="head-top-r">
+          <ul>
+            <li><a href="javascript:void(0);" onclick="SetHome();">设为首页</a></li>
+            <li>|</li>
+            <li><a href="javascript:void(0);" onclick="AddFavorite();">加入收藏</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="head-bottom" id="fbtm">
+    <nav class="head-nav">
+      <ul>
+        <li class='active'><a href="index.html">首页</a></li>
+        <li class='fl'>
+          <a href="index-1.html">风景旅游</a>
+          <ul class="shade">
+
+            <li class="only"><a href="index-2.html">洪崖洞民俗风貌区</a></li>
+
+            <li class="only"><a href="#">磁器口古镇</a></li>
+
+            <li class="only"><a href="#">解放碑</a></li>
+            
+            <li class="only"><a href="#">重庆朝天门广场</a></li>
+            <li class="only"><a href="#">大足石刻</a></li>
+          </ul>
+        </li>
+        <li class='fl'><a href="index-4.html">家乡特产</a>
+          <ul class="shade ">
+
+            <li class="only"><a href="index-5.html">陈麻花</a></li>
+
+            <li class="only"><a href="index-6.html">火锅底料</a></li>
+
+            <li class="only"><a href="index-7.html">羊角豆干</a></li>
+
+          </ul>
+        </li>
+        <li ><a href="index-3.html">风土人情</a>
+          <ul class="shade ">
+
+            <li class="only"><a href="#">嘉陵江</a></li>
+
+            <li class="only"><a href="#">巴渝文化</a></li>
+
+          </ul>
+        </li>
+        <li ><a href="#">英雄事迹</a>
+        </li>
+        <li ><a href="#">传统文化</a>
+        </li>
+        <li ><a href="denglu.html">登录 | 注册</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <script>
+    var fbtn = document.getElementById("fbtn");
+    var fbtm = document.getElementById("fbtm");
+    fbtn.onclick = function () {
+      if (fbtm.style.display == "block") {
+        fbtm.style.display = "none";
+      } else {
+        fbtm.style.display = "block";
+      }
+      setTimeout(() => {
+        fbtm.style.display = "block";
+      }, 20000);
+    }
+  </script>
+
+  <!--内容开始-->
+  <div class="banner">
+    <ul class="nbanList">
+      <li><img src="images/风景旅游.jpg" width="100%" /></li>
+    </ul>
+  </div>
+  <div class="position only-pc">
+    <ul>
+      <li><a href="index.html" style="display: inline-block;">主页</a> > <a href="index-5.html" style="display: inline-block;">家乡特产</a> </li>
+    </ul>
+  </div>
+  <main class="main">
+    <div class="pro">
+      <div class="pro-l">
+        <div class="pro-list">
+          <h2 class="list-title">家乡特产</h2>
+          <ul class="product-nav">
+
+            <li class='first_cat'><a href="index-5.html">涪陵榨菜 </a></li>
+            <li class='first_cat'><a href="index-6.html">重庆火锅</a></li>
+            <li class='first_cat'><a href="index-7.html">重庆小面</a></li>
+            <li class='first_cat'><a href="#">石柱黄连</a></li>
+            <li class='first_cat'><a href="#">奉节脐橙</a></li>
+            <li class='first_cat'><a href="#">南川方竹笋</a></li>
+            <li class='first_cat'><a href="#">垫江咂酒</a></li>
+            <li class='first_cat'><a href="#">彭水苗家土鸡 </a></li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="pro-r">
+        <h1 class="sideTitle"><a href=''>家乡特产</a></h1>
+        <div class="productList">
+          <ul>
+            <li><a href="index-6.html"><img src="images/涪陵榨菜 .gif"></a><br />
+              <a href="#">涪陵榨菜</a>
+            </li>
+            <li><a href="index-7.html" title=""><img src="images/重庆火锅.gif"
+                  alt=""></a><br />
+              <a href="#">重庆火锅</a>
+            </li>
+            <li><a href="#"><img src="images/石柱黄连 .gif" alt="石柱黄连"></a><br />
+              <a href="#">石柱黄连</a>
+            </li>
+            <li><a href="#"><img src="images/奉节脐橙 .gif" alt="奉节脐橙"></a><br />
+              <a href="#">奉节脐橙</a>
+            </li>
+            <li><a href="#"><img src="images/南川方竹笋.gif" alt="南川方竹笋"></a><br />
+              <a href="#">南川方竹笋</a>
+            </li>
+            <li><a href="#"><img src="images/垫江咂酒.gif" alt="垫江咂酒"></a><br />
+              <a href="#">垫江咂酒</a>
+            </li>
+            <li><a href="#"><img src="images/彭水苗家土鸡.gif" alt="彭水苗家土鸡"></a><br />
+              <a href="#">彭水苗家土鸡</a>
+            </li>
+            <li><a href="#"><img src="images/重庆小面.gif" alt="重庆小面"></a><br />
+              <a href="#">重庆小面</a>
+            </li>
+          </ul>
+        </div>
+        <div class="blank clear"></div>
+        <nav class="in">
+          <ul class="pagination">
+            <li><span class="pageinfo">共 <strong>1</strong>页<strong>8</strong>条记录</span></li>
+
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </main>
+  <!--内容结束-->
+  <div class="clear"></div>
+  <footer class="footer">
+    <div class="warp">
+      <nav class="foo-nav ">
+        <ul>
+          <li><a href="index.html">首页</a></li>
+
+          <li><a href="index-1.html">风景旅游</a></li>
+
+          <li><a href="index-4.html">家乡特产</a></li>
+
+          <li><a href="index-3.html">风土人情</a></li>
+
+          <li><a href="#">英雄事迹</a></li>
+
+          <li><a href="#">传统文化</a></li>
+
+          <li ><a href="denglu.html">登录 | 注册</a></li>
+
+        </ul>
+      </nav>
+      <div class="foo-con">Copyright © 2022 xxxxxxxxxxxxxxxxxxxxxxxxxx </div>
+      <div class="foo-link ">
+        <ul>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--版权区结束-->
+</body>
+
+</html>
